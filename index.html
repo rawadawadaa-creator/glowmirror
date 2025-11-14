@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowMirror™ — Hollywood LED Vanity Mirror</title>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; font-family: 'Helvetica Neue', sans-serif; }
+
+        body {
+            background: #fff6fa;
+            color:#333;
+        }
+
+        a { text-decoration:none; color:inherit; }
+
+        /* HEADER */
+        .header {
+            width:100%;
+            background:white;
+            padding:20px 8%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            border-bottom:1px solid #f3cfe3;
+            position: sticky;
+            top:0;
+            z-index:1000;
+        }
+
+        .logo {
+            font-size:26px;
+            font-weight:700;
+            color:#ff7ebd;
+        }
+
+        .btn {
+            background:#ff7ebd;
+            padding:12px 24px;
+            border-radius:6px;
+            font-weight:700;
+            color:white;
+            transition:0.2s;
+        }
+        .btn:hover { background:#ff4fae; }
+
+        /* HERO */
+        .hero {
+            width:100%;
+            padding:60px 8%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            flex-wrap:wrap;
+        }
+
+        .hero-text {
+            width:48%;
+            min-width:300px;
+        }
+
+        .hero-text h1 {
+            font-size:52px;
+            color:#ff5fb1;
+            font-weight:800;
+            line-height:1.2;
+            margin-bottom:20px;
+        }
+
+        .hero-text p {
+            font-size:18px;
+            color:#555;
+            margin-bottom:25px;
+        }
+
+        .price {
+            font-size:36px;
+            font-weight:800;
+            color:#ff2f98;
+            margin-bottom:25px;
+        }
+
+        .hero-img {
+            width:48%;
+            min-width:300px;
+        }
+
+        .hero-img img {
+            width:100%;
+            border-radius:20px;
+            box-shadow:0 8px 20px rgba(255,0,130,0.15);
+        }
+
+        /* BENEFITS */
+        .section-title {
+            text-align:center;
+            font-size:40px;
+            margin-top:70px;
+            color:#ff5fb1;
+            font-weight:800;
+            margin-bottom:30px;
+        }
+
+        .benefits {
+            width:100%;
+            padding:30px 8%;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:30px;
+        }
+
+        .benefit-box {
+            width:30%;
+            min-width:260px;
+            background:white;
+            padding:30px;
+            border-radius:14px;
+            text-align:center;
+            border:1px solid #ffd9ec;
+        }
+
+        .benefit-box h3 {
+            font-size:24px;
+            color:#ff3fa5;
+            margin-bottom:10px;
+        }
+
+        .benefit-box p {
+            font-size:16px;
+            color:#666;
+        }
+
+        /* GALLERY */
+        .gallery {
+            width:100%;
+            padding:30px 8%;
+            display:flex;
+            flex-direction:column;
+            gap:35px;
+        }
+
+        .gallery img {
+            width:100%;
+            border-radius:20px;
+            box-shadow:0 5px 15px rgba(255,0,150,0.15);
+        }
+
+        /* CTA */
+        .cta {
+            text-align:center;
+            padding:70px 8%;
+            background:#ffe3f3;
+            margin-top:60px;
+        }
+
+        .cta h2 {
+            font-size:42px;
+            font-weight:800;
+            color:#ff349a;
+            margin-bottom:25px;
+        }
+
+        .cta p {
+            font-size:19px;
+            color:#444;
+            margin-bottom:25px;
+        }
+
+        /* FOOTER */
+        footer {
+            padding:20px;
+            text-align:center;
+            background:white;
+            border-top:1px solid #ffd9ec;
+            color:#666;
+            margin-top:30px;
+        }
+
+        /* MOBILE RESPONSIVE */
+        @media (max-width:900px) {
+            .hero {
+                flex-direction:column;
+                text-align:center;
+            }
+            .hero-text, .hero-img {
+                width:100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="logo">GlowMirror™</div>
+        <a href="#buy" class="btn">Buy Now</a>
+    </div>
+
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero-text">
+            <h1>GlowMirror™ <br> Hollywood LED Vanity Mirror</h1>
+            <p>Experience flawless lighting, glamour-grade clarity, and a premium finish. Your beauty routine will never be the same.</p>
+            <div class="price">$59.99</div>
+            <a href="#buy" class="btn">Add to Cart</a>
+        </div>
+        <div class="hero-img">
+            <img src="mirror1.jpg" alt="GlowMirror">
+        </div>
+    </div>
+
+    <h2 class="section-title">Why GlowMirror™?</h2>
+
+    <!-- BENEFITS -->
+    <div class="benefits">
+        <div class="benefit-box">
+            <h3>Hollywood Lighting</h3>
+            <p>16 premium LEDs give studio-quality brightness with zero shadows.</p>
+        </div>
+        <div class="benefit-box">
+            <h3>Touch Control</h3>
+            <p>Switch between warm, natural and cool tones. Just tap.</p>
+        </div>
+        <div class="benefit-box">
+            <h3>Premium Build</h3>
+            <p>Luxury frame, crystal clarity, elegant soft-pink aura.</p>
+        </div>
+    </div>
+
+    <!-- GALLERY -->
+    <h2 class="section-title">Product Gallery</h2>
+
+    <div class="gallery">
+        <img src="mirror1.jpg">
+        <img src="mirror2.jpg">
+        <img src="mirror3.jpg">
+    </div>
+
+    <!-- CTA -->
+    <div class="cta" id="buy">
+        <h2>Order Your GlowMirror™ Today</h2>
+        <p>Limited stock available — secure yours now for only $59.99.</p>
+        <a class="btn" href="#">Checkout</a>
+    </div>
+
+    <footer>
+        © 2025 GlowMirror™ — All Rights Reserved.
+    </footer>
+
+</body>
+</html>
